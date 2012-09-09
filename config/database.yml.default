@@ -1,0 +1,20 @@
+defaults: &defaults
+  adapter: postgresql
+  host: localhost
+
+development:
+  <<: *defaults
+  database: mnml-dev
+
+test: &test
+  <<: *defaults
+  database: mnml-test
+
+cucumber:
+  <<: *test
+
+production:
+  <<: *defaults
+  database: mnml-prod
+  username: ---
+  password: ---
