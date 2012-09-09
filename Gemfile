@@ -17,11 +17,16 @@ group :assets do
   gem 'uglifier',     '~> 1.3.0'
 end
 
-# Gems used during development and testing.
-group :development, :test do
-  gem 'rspec-rails'
+# Gems used in development, testing,
+# as well as cucumber environments.
+group :development, :test, :cucumber do
   gem 'debugger'
   gem 'pry'
+end
+
+# Gems required for development and testing.
+group :development, :test do
+  gem 'rspec-rails'
 end
 
 # Test-only gems go here.
