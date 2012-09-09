@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+
+require 'irb'
+require 'irb/completion'
+
+require 'selenium/webdriver'
+require 'capybara/dsl'
+
+if ARGV.delete "--chrome"
+  chrome = true
+end
+
+Capybara.register_driver :chrome do |app|
+  Capybara::Selenium::Driver.new app, browser: :chrome
+end
+
+Capybara.configure do |config|
+  config.default_driver = chrome ? :chrome : :selenium
+end
+
+include Capybara::DSL
+
+IRB.conf[:AUTO_INDENT] = true
+IRB.conf[:PROMPT_MODE] = :SIMPLE
+IRB.start
