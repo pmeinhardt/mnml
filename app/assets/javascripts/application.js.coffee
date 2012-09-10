@@ -10,10 +10,10 @@
 #
 #= require ./namespace
 #
+#= require_tree ./helpers
 #= require_tree ./models
 #= require_tree ./templates
 #= require_tree ./views
-#= require_tree ./helpers
 #= require_tree ./routers
 #
 #= require ./init
