@@ -1,6 +1,7 @@
 class mnml.routers.App extends Backbone.Router
   routes:
     "":       "index"
+    "index":  "index"
     "about":  "about"
 
   index: ->
