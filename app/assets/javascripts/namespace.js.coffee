@@ -1,5 +1,6 @@
 window.mnml ||=
-  models:  {}
-  views:   {}
-  helpers: {}
-  routers: {}
+  models:      {}
+  collections: {}
+  views:       {}
+  helpers:     {}
+  routers:     {}
