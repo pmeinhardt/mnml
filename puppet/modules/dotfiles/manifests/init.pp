@@ -21,4 +21,12 @@ class dotfiles(
   file { "${home}/.rdebugrc":
     content => template("${module_name}/rdebugrc.erb"),
   }
+
+  file { "${home}/.gitconfig":
+    content => template("${module_name}/gitconfig.erb")
+  }
+
+  file { "${home}/.gitignore":
+    content => template("${module_name}/gitignore.erb")
+  }
 }

@@ -21,6 +21,7 @@ node default {
   include stdlib
   include apt
   include git
+  include vim
   include rbenv
   include nodejs
   include postgres
