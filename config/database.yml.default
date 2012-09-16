@@ -1,6 +1,6 @@
 defaults: &defaults
   adapter: postgresql
-  host: localhost
+  encoding: unicode
 
 development:
   <<: *defaults
@@ -16,5 +16,3 @@ cucumber:
 production:
   <<: *defaults
   database: mnml-prod
-  username: ---
-  password: ---
