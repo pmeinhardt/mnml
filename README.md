@@ -3,6 +3,11 @@ MNML
 
 A minimal rails, backbone, handlebars + bootstrap single-page app setup.
 
+Introduction
+------------
+
+Use this project as a foundation to kick-start your own app, copy bits & pieces, fork it. Rather than installing everything directly onto your workstation, I highly recommend you follow the instructions below to quickly build a *"lightweight, reproducible, and portable development environment"* with [Vagrant](http://vagrantup.com/).
+
 Getting started
 ---------------
 
