@@ -4,8 +4,9 @@ gem 'rails', '3.2.8'
 
 gem 'pg', '0.14.1'
 
-gem 'devise', '2.1.2'
-gem 'cancan', '1.6.8'
+# Gems providing authentication and authorization:
+# gem 'devise', '2.1.2'
+# gem 'cancan', '1.6.8'
 
 gem 'jquery-rails'
 
