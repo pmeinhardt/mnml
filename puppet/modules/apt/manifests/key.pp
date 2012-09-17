@@ -45,7 +45,7 @@ define apt::key(
       if ! defined(Exec["${digest}"]) {
         $digest_command = $method ? {
           'content' => "echo '${key_content}' | /usr/bin/apt-key add -",
-          'source'  => "wget -q '${key_source}' -O- | apt-key add -",
+          'source'  => "wget -q -O - '${key_source}' | apt-key add -",
           'server'  => "apt-key adv --keyserver '${key_server}' --recv-keys '${upkey}'",
         }
         exec { "${digest}":

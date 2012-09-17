@@ -1,5 +1,3 @@
-# ppa.pp
-
 define apt::ppa(
   $release = $::lsbdistcodename
 ) {

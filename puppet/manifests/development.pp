@@ -28,6 +28,13 @@ node default {
   include nodejs
   include postgresql
 
+  class { 'chrome':
+    channel => 'unstable',
+    version => '23.0.1262.0-r155673',
+  }
+
+  # include chromedriver
+
   # gem dependencies
 
   package { 'libpq-dev': ensure => installed }
