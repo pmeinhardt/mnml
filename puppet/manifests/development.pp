@@ -33,7 +33,7 @@ node default {
     version => '23.0.1262.0-r155673',
   }
 
-  # include chromedriver
+  class { 'chromedriver': }
 
   # gem dependencies
 
