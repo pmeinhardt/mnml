@@ -7,9 +7,6 @@
 # Ignore bundler config
 /.bundle
 
-# Ignore vagrant status file
-/.vagrant
-
 # Ignore all logfiles and tempfiles.
 chromedriver.log
 /log/*.log
